@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="front">
+<a href="{% url 'table' %}"><img src="{% static 'table.png'%}" style="display: block; margin-left: auto; margin-right: auto;"
+                                 ></a>
+</div>
+{% endblock content %}

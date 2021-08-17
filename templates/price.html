@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<div style="display:flex; text-align:center; margin-left: 300px">
+    <div style="width:350px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     text-align:center; margin-top:50px; margin:40px">
+    <h2 style="background-color:red;">Table for 2</h2>
+    <a href="{% url 'table' %}"><img style="width:300px; height:300px; padding:5px; margin:10px" src="{% static 'chair2.jpg' %}" alt="no">
+    </div></a>
+
+    <div style="width:350px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     text-align:center; margin-top:50px;  margin:40px">
+    <h2 style="background-color:green">Table for 4</h2>
+    <a href="{% url 'table' %}"><img style="width:300px; height:300px; padding:5px margin:10px" src="{% static '4chairs.jpg' %}" alt="no">
+    </div></a>
+</div>
+{% endblock %}
